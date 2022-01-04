@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form </title>
+</head>
+<body>
+    <h1> Registration Form </h1>
+    <form action="/Process" method="Post">
+
+        <div>
+            <label for="nombreUsuario"> 
+                Firts Name:*
+            </label>
+            <input type="text" name="nombreUsuario" id="nombreUsuario" required />
+        </div>
+
+        <div>
+            <label for="apellidoUsuario">
+                Last Name:*
+            </label>
+            <input type="text" name="apellidoUsuario" id="apellidoUsuario" required/>
+        </div>
+
+        <div>
+            <label for="emailUsuario">
+                Email Address:*
+            </label>
+            <input type="text" name="emailUsuario" id="emailUsuario" required />
+        </div>
+
+        <div>
+            <label for="passwordUsuario">
+                Password:*
+            </label>
+            <input type="password" name="passwordUsuario" id="passwordUsuario" required/> 
+        </div>
+
+        <div>
+            <label for="comfirmaUsuario">
+                Comfirm Password:*
+            </label>
+            <input type="password" name="comfirmaUsuario" id="comfirmaUsuario" required />
+        </div>
+
+        <div>
+            <label for="birthdayUsuario">
+                Birthday:
+            </label>
+            <input type="date" name="birthdayUsuario" id="birthdayUsuario" required/>
+        </div>
+
+        <div>
+            <h4>Gender Identity:</h4>
+            
+            <input type="radio" name="genero" id="generoMale" required/>
+            <label for="generoMale">
+                Male
+            </label>
+
+            <input type="radio" name="genero" id="generoFemale" required/>
+            <label for="generoFemale">
+                Female
+            </label>
+
+            
+            <input type="radio" name="genero" id="generoNon-binary" required/>
+            <label for="generoNon-binary">
+                Non-binary
+            </label>
+
+            
+            <input type="radio" name="genero" id="generoIPreferNotToAnswer" required/>
+            <label for="generoIPreferNotToAnswer">
+                I prefer not to answer
+            </label>
+
+        </div>
+
+        <div>
+            <label for=comentario>
+                A short description about myself:
+            </label>
+        </div>
+        <textarea name="comentario" cols="40" rows="3" id="comentario"required ></textarea>
+
+        <div>
+            <label for="favoriteLanguage">
+                Favorite Language:
+            </label>
+            <select name="favoriteLanguage" id="favoriteLanguage" required>
+                <option value="JavaScript">
+                    JavaScript
+                </option>
+
+                <option value="Html">
+                    HTML 
+                </option>
+
+                <option value="CSS">
+                    CCS
+                </option>
+            </select>
+        </div>
+
+        <div>
+            <input type="checkbox" name="accept" id="accept" required>
+            <label for="accept">
+                Yes,I would like to receive periodic email updates
+            </label>
+        </div>
+        <button type="submit" >
+            Create Account
+        </button>
+    </form>
+</body>
+</html>
